@@ -8,7 +8,7 @@
 
 **Description du projet :** 
 
-- Frontend :
+-Frontend :
 
  Le projet a pour but de développer le site internet d'un restaurant permettant à l’internaute de/d’ : 
 
