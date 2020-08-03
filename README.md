@@ -6,7 +6,7 @@
 
 **Cours à présenter :** « Aspects Logique et Programmation » (Q1)
 
-**Thème du projet :** Projet fictif d’un site internet pour un restaurant
+**Thème du projet :** Projet fictif d’un site internet pour un restaurant japonais
 
 **Description du projet :** 
 
@@ -16,14 +16,14 @@
 
 * Accéder à la page d’accueil reprenant la description du restaurant.
 
-* Consulter la carte du restaurant contenant les différentes formules, plats et boissons.
+* Consulter la carte du restaurant contenant les différents plats proposés par le restaurant.
 
 * Effectuer une simulation du prix total selon un certain nombre de personnes et de plats choisis.
 
-* Consulter une page dédiée aux offres spéciales reprenant le plat du jour.
+* Filtrer les différents plats selon leur type (plats chauds, plats froids) et afficher les résultats.
 
 * Avoir accès à une page « Contact » recensant les horaires, le numéro de téléphone et l’adresse du restaurant.
 
-* Visualiser l’intérieur du restaurant et l’aspect des différents plat proposés par le biais de photos.
+* Visualiser l’intérieur du restaurant et l’aspect des différents plat proposés par le biais de photos dans un onglet dedié, la "galerie".
 
-* Pouvoir se déplacer de page en page à l'aide de liens hypertextes (onglets d'accueil, cartes, offres,..) 
+* Pouvoir se déplacer de page en page à l'aide de liens hypertextes (onglets d'accueil, carte, contact,..) 
