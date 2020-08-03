@@ -24,6 +24,6 @@
 
 * Avoir accès à une page « Contact » recensant les horaires, le numéro de téléphone et l’adresse du restaurant.
 
-* Visualiser l’intérieur du restaurant et l’aspect des différents plat proposés par le biais de photos dans un onglet dedié, la "galerie".
+* Visualiser l’intérieur du restaurant et l’aspect des différents plat proposés par le biais de photos dans un onglet dedié, nommé la "galerie".
 
 * Pouvoir se déplacer de page en page à l'aide de liens hypertextes (onglets d'accueil, carte, contact,..) 
