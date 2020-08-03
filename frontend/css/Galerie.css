@@ -1,0 +1,49 @@
+
+input[type=text], input[type=number], select{
+    width: 20%;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+
+}
+
+input[type=submit]:hover {
+    background-color: green;
+}
+
+
+#imgContainerGalerie img{
+    width : 70%;
+    height : 675px;
+    border : 10px solid grey;
+    border-radius: 15px;
+
+}
+
+#moins1Button{
+    float : left;
+    position : static;
+    margin-top : -350px;
+    margin-left : 220px;
+    height : 50px;
+    width : 50px;
+}
+
+#plus1Button {
+    float : right;
+    margin-top : -350px;
+    margin-right : 220px;
+    height : 50px;
+    width : 50px;
+    position : static;
+}

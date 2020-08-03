@@ -1,0 +1,48 @@
+
+p {
+    font-size : 20px;
+}
+
+li {
+    list-style : square;
+    padding : 15px;
+    font-size : 20px;
+}
+
+
+#blocContact {
+    float : left;
+    width : 75%;
+}
+
+#horairesRestaurant {
+    float : right;
+    width : 25%;
+
+}
+
+.localisationRestau {
+    height : 400px;
+    margin-right : 400px;
+    width : 25%;
+    float : right;
+    margin-top : -70px;
+}
+
+.localisationRestau img {
+    height : 400px;
+    border : black solid 2px
+
+}
+
+
+
+
+#telephoneAdresse {
+    width : 30%;
+    float : left;
+    font-size : 20px;
+    margin-top : 20px;
+}
+
+

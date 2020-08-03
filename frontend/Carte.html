@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>SushisBar | Restaurant</title>
+    <script src="js/Carte.js"></script>
+    <link href="css/restaurant.css" rel="stylesheet">
+    <link href="css/Carte.css" rel="stylesheet">
+</head>
+<body onload="init()">
+<header>
+    <div id="banner-restaurant">
+        <div id="nomRestaurant">
+            <a href="Accueil.html"> <h1> SushiBar <img src="https://img.icons8.com/plasticine/100/000000/sushi.png" id="logoRestaurant"></h1> </a>
+        </div>
+
+
+
+        <nav class="menuNav">
+
+            <a href="Accueil.html">ACCUEIL</a>
+            <a href="Galerie.html">GALERIE</a>
+            <a href="Carte.html">CARTE</a>
+            <a href="Contact.html">CONTACT</a> <br> <br> <br>
+
+</nav>
+
+    </div>
+
+</header>
+<div id="bloc1">
+
+    <h1 id="titreOnglet">Carte du restaurant</h1>
+<form id="formSelectFilter">
+
+
+
+    <label for="filtrePlat" id="filtrePlat"> Type de plat : </label>
+    <select id="typePlatfilter" onchange="filtrePlat()">
+        <option> Tous les plats </option>
+        <option> Plats froids </option>
+        <option> Plats chauds </option>
+    </select>
+
+
+
+
+
+
+
+</form>
+
+    <div id="platsCartes">
+
+
+
+
+    </div>
+
+
+</div>
+
+<div id="bloc2">
+    <div id="simulationPrix">
+
+
+        <fieldset>
+            <legend>Simulation du prix</legend>
+            <table>
+                <thead>
+                <tr><th>Quantité</th><th>Plat</th><th>Pièces</th><th>Total</th></tr>
+                </thead>
+
+                <tfoot>
+
+                <tr><td></td><td></td><td></td><td id="prixT"></td></tr>
+
+                </tfoot>
+
+
+
+
+
+
+                <tbody id="platsClientTable">
+
+
+
+                </tbody>
+
+            </table>
+        </fieldset>
+
+
+    </div>
+</div>
+
+</body>
+</html>

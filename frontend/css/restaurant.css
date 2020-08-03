@@ -1,0 +1,60 @@
+
+/* Feuille de style pour toutes les pages html du restaurant*/
+
+nav{
+    float : right;
+    margin-top : 160px;
+
+}
+
+body {
+    font-family: 'Molengo', Georgia, Times, serif;
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-color : ghostwhite;
+
+}
+
+a{
+    text-decoration: none;
+    font-size : 30px;
+    color : black;
+}
+
+#banner-restaurant .menuNav a {
+    padding: 25px;
+    text-decoration: none;
+    font-size : 30px;
+    color : white;
+
+}
+
+#banner-restaurant{
+    width : 100%;
+    height : 330px;
+    background-image : url("../img/banner/SushiBarBackG.jpg");
+    background-position : bottom;
+    background-repeat : no-repeat;
+    background-size : cover;
+}
+
+
+#nomRestaurant{
+    margin-left : 150px;
+}
+
+
+
+#logoRestaurant {
+position : absolute;
+top : 19px;
+
+
+}
+
+#titreOnglet {
+    text-align : center;
+}
+
+
+/*background-color : rgb(180, 60, 56);*/

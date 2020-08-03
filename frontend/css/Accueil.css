@@ -1,0 +1,23 @@
+
+#imgContainerAccueil img {
+    width : 50%;
+    height : 550px;
+
+}
+
+#plus1Button {
+float : right;
+height : 50px;
+margin-top : -275px;
+margin-right : 443px;
+
+}
+
+.descriptifRestau {
+    font-size : 25px;
+    text-align : center;
+    font-style : italic;
+
+
+}
+

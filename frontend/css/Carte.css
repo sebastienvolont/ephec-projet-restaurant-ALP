@@ -1,0 +1,120 @@
+
+section {
+
+    border : solid grey 15px;
+    background-color : #FFEBCD;
+    width : 24%;
+    display : inline-block;
+    margin : 40px;
+    height : 600px;
+    float : left;
+}
+
+
+legend {
+    text-align : center;
+}
+
+h2 {
+    display : block;
+    float : left;
+    margin-left : 60px;
+
+}
+
+input[type=number], select{
+    width: 20%;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+#platsCartes #retirerP, #ajouterP {
+    float : right;
+    display : inline;
+    margin: 5px;
+    padding : 10px;
+    margin-top : 10px;
+    font-size : 25px;
+    border-radius: 8px;
+    width :45px;
+}
+
+#platsCartes img {
+    width : 370px;
+    height : 185px;
+    max-width : 100%;
+}
+
+#platsCartes h1 {
+    text-align : center;
+}
+
+
+#simulationPrix fieldset {
+    margin-top : 115px;
+    float : right;
+    width : 10%;
+    position : fixed;
+    border : 2px solid black;
+}
+
+#simulationPrix th{
+    color : #4682B4;
+}
+
+#contentG, #contentD, th{
+    padding : 5px;
+    border : 2px solid grey;
+
+
+}
+
+#prixT {
+    border : 3px solid red;
+}
+
+#bloc1 select {
+    display : inline-block;
+    justify-content : center;
+    margin-left : 15px;
+}
+
+
+
+#bloc1{
+    float : left;
+    width : 80%;
+
+}
+
+
+#bloc2 {
+    float: right;
+    width : 20%;
+
+}
+
+
+#affichageInfos {
+    float : right;
+    font-size : 25px;
+    text-align : center;
+    font-style : italic
+
+}
+
+#formSelectFilter {
+    margin-left : 450px;
+    width : 1500px;
+
+}
+
+#titreOnglet {
+    margin-right : 75px;
+}
+
