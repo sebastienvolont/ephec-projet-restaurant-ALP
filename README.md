@@ -1,4 +1,4 @@
-# ephec-projet-restaurant-ALP --- SushiBar
+# SushiBar - ephec-projet-restaurant-ALP 
 
 **Étudiant :** VOLONT Sébastien
 
