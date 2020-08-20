@@ -36,18 +36,38 @@ function trierCroissantPlat(x,y) {
 function init() {
     menus.sort(trierCroissantPlat);
     makePlats(menus);
+    affichageCssSections();
 
 }
 
+/**
+ *
+ * Fonction permettant de vérifier si un plat a été choisi ou non par le client.
+ *
+ *  On parcourt le tableau d'objet "addition" :
+ *
+ * - SI le paramètre nomPlat est équivalent au nom du plat choisi alors :
+ * => Cela retourne l'indice "i" représentant la position du plat dans le tableau
+ *
+ * - AUTREMENT SI Le param!tre "nomPlat" n'est pas présent dans le tableau alors :
+ * => Cela retourne -1 qui signifie que le plat n'a pas été trouvé.
+ *
+ * @param {string} nomPlat --- Nom du plat potentiellement choisi  par le client.
+ * @returns {number} --- i (retourne l'indice représentant la position du plat dans le tableau si le nom du plat a été retrouvé dans le tableau addition)
+ * @returns {number} --- -1 (retourne -1 si le nom du plat n'a pas été retrouvé dans le tableau addition)
+ *
+ *
+ */
 
 function index(nomPlat) {
-    for(let i = 0; i < addition.length; i++) {
+    for (let i = 0; i < addition.length; i++) {
         if (addition[i].nomPlat === nomPlat) {
             return i;
+        } else {
+            return -1;
         }
-    }
-    return -1;
 
+    }
 }
 
 
@@ -85,6 +105,7 @@ function filtrePlat() {
 
         case "Tous les plats" :
             makePlats(menus);
+            affichageCssSections();
             break;
 
         case "Plats froids" :
@@ -92,6 +113,7 @@ function filtrePlat() {
                 return (x.typePlat === "plat froid");
             });
             makePlats(platsFroids);
+            affichageCssSections();
             break;
 
         case "Plats chauds" :
@@ -99,6 +121,7 @@ function filtrePlat() {
                 return (x.typePlat === "plat chaud");
             });
             makePlats(platsChauds);
+            affichageCssSections();
             break;
 
     }
@@ -159,17 +182,47 @@ function afficherTable() {
     }
 }
 
+
+
 function retirerPlat(plat) {
     let nPlat = plat;
     let ind = index(nPlat);
 
     if(ind !== -1) {
-        total = total - (addition[ind].prixPlat * addition[ind].nbrPersonnes);
-        getId("prixT").innerHTML = total;
-        addition.splice(ind, 1);
-        afficherTable();
+        {
+            if(addition[ind].nbrPersonnes > 1) {
+                addition[ind].nbrPersonnes -= 1;
+                total = total - (addition[ind].prixPlat);
+                getId("prixT").innerHTML = total;
+                afficherTable();
+
+            } else {
+                total = total - (addition[ind].prixPlat * addition[ind].nbrPersonnes);
+                getId("prixT").innerHTML = total;
+                addition.splice(ind, 1);
+                afficherTable();
+            }
+        }
+
     }
 }
 
 
 
+function affichageCssSections() {
+
+    let getSections = document.querySelectorAll("section");
+
+    for(let i = 0; i < getSections.length; i++) {
+
+            getSections[i].style.border = "solid grey 15px";
+            getSections[i].style.backgroundColor = "#FFEBCD";
+            getSections[i].style.width = "24%";
+            getSections[i].style.display = "inline-block";
+            getSections[i].style.margin = "40px";
+            getSections[i].style.height = "600px";
+            getSections[i].style.float = "left";
+
+    }
+
+}

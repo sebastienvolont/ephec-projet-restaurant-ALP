@@ -16,7 +16,7 @@ function addHoraires() {
 
     for (let i in horaires) {
         let test = document.getElementById("hRestaurant");
-        test.innerHTML += "<li>" + horaires[i].jourSemaine + " : " +  horaires[i].heures + "</li>";
+        test.innerHTML += "<li id='liHoraires'>" + horaires[i].jourSemaine + " : " +  horaires[i].heures + "</li>";
     }
 
 }
