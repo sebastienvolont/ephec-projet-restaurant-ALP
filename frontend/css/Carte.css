@@ -1,14 +1,4 @@
 
-section {
-    border : solid grey 15px;
-    background-color : #FFEBCD;
-    width : 24%;
-    display : inline-block;
-    margin : 40px;
-    height : 600px;
-    float : left;
-}
-
 
 legend {
     text-align : center;

@@ -3,7 +3,7 @@ p {
     font-size : 20px;
 }
 
-li {
+#hRestaurant li {
     list-style : square;
     padding : 15px;
     font-size : 20px;
@@ -12,29 +12,28 @@ li {
 
 #blocContact {
     float : left;
-    width : 75%;
+    width : 70%;
 }
 
 #horairesRestaurant {
     float : right;
-    width : 25%;
+    width : 26%;
+    margin-right : 15px;
 
 }
 
 .localisationRestau {
-    height : 400px;
-    margin-right : 400px;
-    width : 25%;
+    height : 490px;
+    margin-right : 150px;
+    width : 550px;
     float : right;
-    margin-top : -70px;
 }
 
 .localisationRestau img {
-    height : 400px;
-    border : black solid 2px
+    height : 350px;
+    border : black solid 2px;
 
 }
-
 
 
 
@@ -42,7 +41,23 @@ li {
     width : 30%;
     float : left;
     font-size : 20px;
-    margin-top : 20px;
 }
 
+
+#horairesRestaurant, #telephoneAdresse, .localisationRestau {
+    border : 5px solid black;
+    background-color : #FFEBCD;
+    color : black;
+    padding : 5px;
+    height: 450px;
+    width : 477px;
+
+}
+
+#horairesRestaurant p, .localisationRestau p, #coordonneesRestau {
+    text-align : center;
+    border : 4px solid black;
+    border-radius : 15px;
+
+}
 
