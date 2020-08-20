@@ -60,14 +60,15 @@ function init() {
  */
 
 function index(nomPlat) {
-    for (let i = 0; i < addition.length; i++) {
+    let i = 0;
+    while(i < addition.length) {
         if (addition[i].nomPlat === nomPlat) {
             return i;
-        } else {
-            return -1;
         }
-
+        i++;
     }
+    return -1;
+
 }
 
 
@@ -85,7 +86,7 @@ function makePlats(elem) {
         getId("platsCartes").innerHTML += "<section id="+ i + ">" +
             "<h1>" + elem[i].plat + "</h1>" +
             "<label for='nbrPersonnes'> Nombre de Personnes : </label>" +
-            "<input type='number' id=" + elem[i].plat + " value= 1 step=1 max=10>" +
+            "<input type='number' id=" + elem[i].plat + " value= 1 step=1 max=10 min=1>" +
             "<button value='-' id='ajouterP' onclick='retirerPlat(`" + platid + "`)'> - </button>" +
             "<button value='+' id='retirerP' onclick='ajouterPlat(`"+ platid + "`,`" + prixid + "`, `" + nbrPieces+ "`)'> + </button>" +
             "<img src='img/plats-restaurant/" + elem[i].plat + ".jpg'>" +
