@@ -1,6 +1,6 @@
 "use strict";
 
-//Tableau d'objets représentant la carte du restaurant
+//Tableau d'objets représentant la carte du restaurant.
 let menus = [
     {plat : 'Maki', prix : 6.25, pcs : 6, typePlat : "plat froid ", description : "Riz japonais, vinaigre de riz, concombre, avocats, saumon frais, feuilles de nori, sésames et du persil haché."},
     {plat : 'Sashimi', prix : 5.50, pcs : 4, typePlat : "plat froid", description : "Filets de saumon, thon, daurade, pâte de wasabi, feuilles de shiso et de la sauce soja."},
@@ -21,10 +21,12 @@ let menus = [
 let total = 0;
 let addition = [];
 
+
 function getId(id) {
     return document.getElementById(id);
 }
 
+//Fonction permettant de trier dans l'ordre croissant un tableau d'objet.
 function trierCroissantPlat(x,y) {
     if(x.plat < y.plat) {return -1}
     if(x.plat > y.plat) {return 1}
@@ -32,7 +34,7 @@ function trierCroissantPlat(x,y) {
 }
 
 
-
+//Fonction initialisée au chargement de la page.
 function init() {
     menus.sort(trierCroissantPlat);
     makePlats(menus);
@@ -72,14 +74,14 @@ function index(nomPlat) {
 }
 
 
-
+//Fonction permettant de construire les différentes sections du paramètre "elem".
 function makePlats(elem) {
 
     getId("platsCartes").innerHTML = "";
 
     for(let i in elem) {
-        let platid = elem[i].plat;
-        let prixid = elem[i].prix;
+        let platId = elem[i].plat;
+        let prixId = elem[i].prix;
         let nbrPieces = elem[i].pcs;
 
 
@@ -87,8 +89,8 @@ function makePlats(elem) {
             "<h1>" + elem[i].plat + "</h1>" +
             "<label for='nbrPersonnes'> Nombre de Personnes : </label>" +
             "<input type='number' id=" + elem[i].plat + " value= 1 step=1 max=10 min=1>" +
-            "<button value='-' id='ajouterP' onclick='retirerPlat(`" + platid + "`)'> - </button>" +
-            "<button value='+' id='retirerP' onclick='ajouterPlat(`"+ platid + "`,`" + prixid + "`, `" + nbrPieces+ "`)'> + </button>" +
+            "<button value='-' id='ajouterP' onclick='retirerPlat(`" + platId + "`)'> - </button>" +
+            "<button value='+' id='retirerP' onclick='ajouterPlat(`"+ platId + "`,`" + prixId + "`, `" + nbrPieces+ "`)'> + </button>" +
             "<img src='img/plats-restaurant/" + elem[i].plat + ".jpg'>" +
             "<h2>" + elem[i].prix + " € </h2>" +
             "<h2>" +  elem[i].pcs + " pièces </h2>" +
@@ -99,8 +101,8 @@ function makePlats(elem) {
     }
 }
 
+//Fonction permettant de filtrer les plats de la carte "menus" afin d'afficher soit les plats froids, les plats chauds ou bien tous les plats proposés par le restaurant.
 function filtrePlat() {
-
 
     switch (getId("typePlatfilter").value) {
 
@@ -162,14 +164,12 @@ getId("prixT").innerHTML = total.toFixed(2) + "€";
 
 }
 
-
+//Création de la table représentant le récapitulatif de l'addition du client.
 function afficherTable() {
 
     let menusClient = document.getElementById("platsClientTable");
 
     menusClient.innerHTML = "";
-
-
 
     for (let i in addition) {
         menusClient.innerHTML += "<tr>" +
@@ -184,7 +184,7 @@ function afficherTable() {
 }
 
 
-
+//Fonction permettant de retirer à l'unité un plat ou bien de le retirer complètement de l'addition si celui-ci est déjà présent dans le tableau d'objet "addition".
 function retirerPlat(plat) {
     let nPlat = plat;
     let ind = index(nPlat);
@@ -210,6 +210,7 @@ function retirerPlat(plat) {
 
 
 
+//Fonction permettant de mettre en forme les sections de la page "Carte".
 function affichageCssSections() {
 
     let getSections = document.querySelectorAll("section");

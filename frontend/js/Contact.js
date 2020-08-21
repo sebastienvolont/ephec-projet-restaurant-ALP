@@ -1,5 +1,6 @@
 "use strict";
 
+//Tableau d'objet représentant les horaires du restaurant selon le jour de la semaine.
 let horaires = [
 
     {jourSemaine : "Lundi", heures:"12h00 - 21h30"},
@@ -12,11 +13,12 @@ let horaires = [
 
     ];
 
+
 function addHoraires() {
 
     for (let i in horaires) {
-        let test = document.getElementById("hRestaurant");
-        test.innerHTML += "<li id='liHoraires'>" + horaires[i].jourSemaine + " : " +  horaires[i].heures + "</li>";
+        let horairesRestaurant = document.getElementById("hRestaurant");
+        horairesRestaurant.innerHTML += "<li id='liHoraires'>" + horaires[i].jourSemaine + " : " +  horaires[i].heures + "</li>";
     }
 
 }
