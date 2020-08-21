@@ -1,7 +1,7 @@
 "use strict";
 
 
-let counter = 0;
+let compteur = 0;
 let imgsRestau = [];
 
 
@@ -21,13 +21,13 @@ function carouselImg() {
 
 
 
-    document.defilementImages.src = imgsRestau[counter];
+    document.defilementImages.src = imgsRestau[compteur];
 
-    if (counter < imgsRestau.length - 1) {
-        counter++;
+    if (compteur < imgsRestau.length - 1) {
+        compteur++;
 
-    } else if (counter === 4) {
-        counter = 0;
+    } else if (compteur === 4) {
+        compteur = 0;
     }
 
     setTimeout("carouselImg()", 1250)

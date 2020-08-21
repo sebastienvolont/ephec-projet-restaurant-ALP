@@ -1,6 +1,6 @@
 "use strict";
 
-let counter = 0;
+let compteur = 0;
 let imgsGalerie = [];
 
 window.onload = carouselImgGalerie;
@@ -18,30 +18,30 @@ function carouselImgGalerie() {
     imgsGalerie[7] = "img/galerie-photos/decor-exterieur01.jpg";
 
 
-    document.imagesGalerie.src = imgsGalerie[counter];
+    document.imagesGalerie.src = imgsGalerie[compteur];
 
 
 }
 
 
 function ajouterPlusUn() {
-  if(counter < imgsGalerie.length - 1) {
-      counter ++;
-      document.imagesGalerie.src = imgsGalerie[counter] ;
-      console.log(counter);
-  } else if (counter === imgsGalerie.length-1) {
-      counter = -1;
+  if(compteur < imgsGalerie.length - 1) {
+      compteur++;
+      document.imagesGalerie.src = imgsGalerie[compteur] ;
+      console.log(compteur);
+  } else if (compteur === imgsGalerie.length-1) {
+      compteur = -1;
   }
 
 
 }
 
 function moinsUn() {
-    if (counter !== 0) {
-        counter = counter - 1;
-        document.imagesGalerie.src = imgsGalerie[counter];
-        console.log(counter);
-    } else if (counter === 0) {
-        counter = imgsGalerie.length;
+    if (compteur !== 0) {
+        compteur = compteur - 1;
+        document.imagesGalerie.src = imgsGalerie[compteur];
+        console.log(compteur);
+    } else if (compteur === 0) {
+        compteur = imgsGalerie.length;
     }
 }
