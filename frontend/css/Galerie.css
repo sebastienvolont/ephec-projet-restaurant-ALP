@@ -9,7 +9,6 @@
 
 #moins1Button{
     float : left;
-    position : static;
     margin-top : -350px;
     margin-left : 220px;
     height : 50px;
@@ -22,5 +21,5 @@
     margin-right : 220px;
     height : 50px;
     width : 50px;
-    position : static;
+
 }
