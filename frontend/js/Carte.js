@@ -103,8 +103,8 @@ function makePlats(elem) {
 
 //Fonction permettant de filtrer les plats de la carte "menus" afin d'afficher soit les plats froids, les plats chauds ou bien tous les plats proposés par le restaurant.
 function filtrePlat() {
-
-    switch (getId("typePlatfilter").value) {
+   let filtrePlat =  getId("typePlatfilter").value;
+    switch (filtrePlat) {
 
         case "Tous les plats" :
             makePlats(menus);
@@ -172,7 +172,8 @@ function afficherTable() {
     menusClient.innerHTML = "";
 
     for (let i in addition) {
-        menusClient.innerHTML += "<tr>" +
+        menusClient.innerHTML +=
+            "<tr>" +
             "<td id='contentG'>" + addition[i].nbrPersonnes + "x" + "</td>" +
             "<td id='contentG'>" + addition[i].nomPlat + "</td>" +
             "<td id='contentG'>" + addition[i].nbrPieces + "</td>" +
